@@ -1,4 +1,4 @@
-var gatewayURL ='http://192.168.1.50:8082/servicio_json/agentes';
+var gatewayURL ='http://192.168.1.50:8082/servicio_json';
 //'http://192.168.1.50:8082/servicio_rest/agentes/format/json'; 
 //'http://192.168.1.50:8080/plato/restaurante/restaurante?callback=true&id=2033';
 //'http://192.168.1.50:8082/servicio_rest/agentes/format/json'; 
@@ -22,7 +22,7 @@ function getCustomers() {
 	// This method is automatically generated. Don't modify it.
 	jQuery.mobile.showPageLoadingMsg('Loading');
 	$.ajax({
-		url : gatewayURL,
+		url : gatewayURL+'/agentes',
 		dataType: 'jsonp',
         jsonp: 'callback',
         jsonpCallback: 'jsonpCallback',
@@ -56,10 +56,9 @@ function onGetCustomers(response) {
  * 
  */
 function getAgentesBusqueda(idbanco,iddistrito){
-	var getsearchURL='http://192.168.1.50:8082/servicio_json/buscaragente/format/json';
 	jQuery.mobile.showPageLoadingMsg('Loading');
 	$.ajax({
-		url : getsearchURL+'?id='+iddistrito + '&idbank=' + idbanco,
+		url : gatewayURL+'/buscaragente'+'?id='+iddistrito + '&idbank=' + idbanco,
 		dataType: 'jsonp',
         jsonp: 'callback',
         jsonpCallback: 'jsonpCallback',
@@ -98,10 +97,9 @@ function onGetAgentes(response) {
  * @returns
  */
 function getInstituBusqueda(idinst,iddistrito){
-	var getsearchURL='http://192.168.1.50:8082/servicio_json/buscarinstitucion/format/json';
 	jQuery.mobile.showPageLoadingMsg('Loading');
 	$.ajax({
-		url : getsearchURL+'?iddis='+iddistrito + '&idinst=' + idinst,
+		url : gatewayURL+'/buscarinstitucion'+'?iddis='+iddistrito + '&idinst=' + idinst,
 		dataType: 'jsonp',
         jsonp: 'callback',
         jsonpCallback: 'jsonpCallback',

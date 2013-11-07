@@ -22,7 +22,12 @@
   <preference name="target-device"    value="universal" />
   <preference name="fullscreen"       value="false" />
 
-  <icon src="style/images/icon/android/playstore-icon.png" />
+  <icon src="style/images/icon/android/drawable-hdpi/ic_launcher.png" />
+  <icon src="style/images/icon/android/drawable-ldpi/ic_launcher.png" />
+  <icon src="style/images/icon/android/drawable-mdpi/ic_launcher.png" />
+  <icon src="style/images/icon/android/drawable-xhdpi/ic_launcher.png" />
+  <icon src="style/images/icon/android/drawable-xxhdpi/ic_launcher.png" />
+
   <gap:splash src="style/images/icon/android/drawable-xxhdpi/ic_launcher.png" />
 
   <plugin name="InAppBrowser" value="CDVInAppBrowser" />

@@ -22,11 +22,9 @@
   <preference name="target-device"    value="universal" />
   <preference name="fullscreen"       value="false" />
 
-  <icon src="style/images/icon/android/drawable-hdpi/ic_launcher.png" />
-  <icon src="style/images/icon/android/drawable-ldpi/ic_launcher.png" />
-  <icon src="style/images/icon/android/drawable-mdpi/ic_launcher.png" />
-  <icon src="style/images/icon/android/drawable-xhdpi/ic_launcher.png" />
-  <icon src="style/images/icon/android/drawable-xxhdpi/ic_launcher.png" />
+  <icon src="icon.png" width="64" height="64" gap:role="default" />
+  <icon src="style/images/icon/android/drawable-hdpi/ic_launcher.png" width="72" height="72" gap:platform="android" gap:density="hdpi" />
+  <icon src="style/images/icon/android/drawable-xhdpi/ic_launcher.png" width="96" height="96" gap:platform="android" gap:density="xhdpi" />
 
   <gap:splash src="style/images/icon/android/drawable-xxhdpi/ic_launcher.png" />
 

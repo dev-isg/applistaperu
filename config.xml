@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<access uri="http://listaperu.com" subdomains="true" />
+<access uri="http://192.168.1.50:8082" subdomains="true" />
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id        = "com.novasoftware.annualtargets"

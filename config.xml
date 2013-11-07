@@ -22,7 +22,7 @@
   <preference name="target-device"    value="universal" />
   <preference name="fullscreen"       value="false" />
 
-  <icon src="style/images/icon/android/playstore-icon" />
+  <icon src="style/images/icon/android/playstore-icon.png" />
   <gap:splash src="style/images/icon/android/drawable-xxhdpi/ic_launcher.png" />
 
   <plugin name="InAppBrowser" value="CDVInAppBrowser" />

@@ -1,0 +1,84 @@
+#errorMessage {
+	display: none;
+}
+
+#page14
+{
+    background-color: #000;
+    background-image: url(images/backgrounds/background-1.jpg);/* Check bg.jpg || backgroung.jpg */
+    background-size: cover; 
+}
+
+.ui-gridkev-a .ui-blockkev-a{
+	clear:left;
+}
+
+.ui-gridkev-a .ui-blockkev-a, .ui-gridkev-a .ui-blockkev-b{
+	
+	width:50%;
+}
+
+.ui-tag{
+	text-decoration: none;
+	text-align: center;
+	display: block;
+}
+
+.ui-tag span{
+	display: block;
+	color:#ffffff;
+	text-shadow: 0 0 0;
+	text-align: center;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+.ui-blockkev{
+    height: 0px;
+    padding-bottom: 28%; 
+    margin-top: 10px;
+    position:relative;
+ /*   width: 50%;*/
+/*    float: left;	   */
+     opacity: 0.875; 
+
+}
+
+
+#agente{
+	background-color:#b91d47;
+}
+
+#restaurante{
+	background-color:#7e3878;
+}
+
+#institucion{
+	background-color: #c86946;
+}
+
+#telefono{
+	background-color: #7dafb9;
+}
+
+#movilidad{
+	background-color: #915528;
+}
+
+#entretenimiento{
+	background-color: #887F2E;
+}
+
+.ui-tag  i{
+	font-size: 1.4em;
+	color:#ffffff;
+	text-shadow: 0 0 0;
+	text-align: center;
+}
+
+.ui-blockkev a{
+	padding: 0.9em;
+}
+
+.tipografia p{
+	text-align: justify;
+	
+}

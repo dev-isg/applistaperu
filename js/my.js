@@ -148,7 +148,7 @@ function getDistritos(){
         });
 	});*/
 	$.ajax({
-		url:gatewayURL+'/servicio_json/distrito',
+		url:gatewayURL+'/distrito',
 		dataType: 'jsonp',
         jsonp: 'callback',
         jsonpCallback: 'jsonpCallback',

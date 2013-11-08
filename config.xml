@@ -26,8 +26,6 @@
   <icon src="style/images/icon/android/drawable-hdpi/ic_launcher.png" width="72" height="72" gap:platform="android" gap:density="hdpi" />
   <icon src="style/images/icon/android/drawable-xhdpi/ic_launcher.png" width="96" height="96" gap:platform="android" gap:density="xhdpi" />
 
-  <gap:splash src="style/images/icon/android/drawable-xxhdpi/ic_launcher.png" />
-
   <plugin name="InAppBrowser" value="CDVInAppBrowser" />
-  <access origin="http://192.168.1.50" subdomains="true" />
+  <access origin="http://listaperu.com" subdomains="true" />
 </widget>

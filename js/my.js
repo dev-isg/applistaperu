@@ -1,4 +1,4 @@
-var gatewayURL ='http://192.168.1.50:8082/servicio_json';
+var gatewayURL ='http://listaperu.com/servicio_json';
 //'http://192.168.1.50:8082/servicio_rest/agentes/format/json'; 
 //'http://192.168.1.50:8080/plato/restaurante/restaurante?callback=true&id=2033';
 //'http://192.168.1.50:8082/servicio_rest/agentes/format/json'; 
@@ -75,9 +75,9 @@ function onGetAgentes(response) {
 	agentes = response;
 	$('#errorMessageSearch p').remove();
 	if (agentes.code == 1) {
-		var newAgentes = '';
+		var newAgentes = '<li id="item-id" data-theme="">Lista de agentes</li>';
 		$.each(agentes.result, function(index, item) {
-			newAgentes += '<li data-theme="">' + '<h3>' + item.va_nombre
+			newAgentes += '<li id="item-id" data-theme="">' + '<h3>' + item.va_nombre
 					+ '</h3>' + '<p>' + item.va_direccion + '</p>' + '</li>';
 		});
 		$('#agentesearch li[role!=heading]').remove();

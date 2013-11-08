@@ -2,11 +2,17 @@
 	display: none;
 }
 
-#page14
-{
-    background-color: #000;
-    background-image: url(images/backgrounds/background-1.jpg);/* Check bg.jpg || backgroung.jpg */
+.ui-body-c, .ui-overlay-c {
+	background-color: #000;
+    background-image: url(images/backgrounds/background-1.jpg);/* Check bg.jpg || backgroung.jpg */ 
     background-size: cover; 
+}
+
+#item-id{
+	background: #F8F8F8;
+	border: 1px solid #dbd9cb;
+	border-left-width: 0px;
+	border-right-width: 0px;
 }
 
 .ui-gridkev-a .ui-blockkev-a{
@@ -24,6 +30,11 @@
 	display: block;
 }
 
+#lbldistrito{
+	text-decoration: none;
+	color:#ffffff;
+	text-shadow: 0 0 0;
+}
 .ui-tag span{
 	display: block;
 	color:#ffffff;
@@ -77,7 +88,10 @@
 .ui-blockkev a{
 	padding: 0.9em;
 }
-
+.tipografia {
+	background-color: #ffffff;
+	margin: 10px;
+}
 .tipografia p{
 	text-align: justify;
 	

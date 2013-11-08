@@ -219,17 +219,21 @@ function ajaxErrorHandler(xhr, ajaxOptions, thrownError) {
 	});
 }
 
+function onDeviceReady(){
+    document.addEventListener("backbutton", function(e){
+       if($.mobile.activePage.is('#page14')){
+           e.preventDefault();
+           navigator.app.exitApp();
+       }
+       else {
+           navigator.app.backHistory()
+       }
+    }, false);
+}
+
+
 $(document).ready(function() {
-	document.addEventListener("backbutton", function(e){
-    if($.mobile.activePage.is('#page14')){
-        e.preventDefault();
-        navigator.app.exitApp();
-    }
-    else {
-        navigator.app.backHistory()
-    }
-}, false);
-	
+	document.addEventListener("deviceready", onDeviceReady(), false);
 	$('#getListBtn').bind('click', getCustomers);
 	$('#errorMessage').ajaxError(ajaxErrorHandler);
 	jQuery.support.cors = true;

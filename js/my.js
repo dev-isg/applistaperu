@@ -220,6 +220,16 @@ function ajaxErrorHandler(xhr, ajaxOptions, thrownError) {
 }
 
 $(document).ready(function() {
+	document.addEventListener("backbutton", function(e){
+    if($.mobile.activePage.is('#page14')){
+        e.preventDefault();
+        navigator.app.exitApp();
+    }
+    else {
+        navigator.app.backHistory()
+    }
+}, false);
+	
 	$('#getListBtn').bind('click', getCustomers);
 	$('#errorMessage').ajaxError(ajaxErrorHandler);
 	jQuery.support.cors = true;
@@ -229,16 +239,6 @@ $(document).ready(function() {
 	getBusquedaInst();
 	
 });
-
-$(document).addEventListener("backbutton", function(e){
-    if($.mobile.activePage.is('#page14')){
-        e.preventDefault();
-        navigator.app.exitApp();
-    }
-    else {
-        navigator.app.backHistory()
-    }
-}, false);
 
 $(document).bind(
 		'pagebeforechange',

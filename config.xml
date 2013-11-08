@@ -22,10 +22,10 @@
   <preference name="target-device"    value="universal" />
   <preference name="fullscreen"       value="false" />
 
-  <gap:splash src="splash.png" />
-  <gap:splash src="style/images/splash-ldpi.png" gap:platform="android" gap:density="ldpi" />
-  <gap:splash src="splash.png" gap:platform="android" gap:density="mdpi" />
-  <gap:splash src="style/images/splash-hdpi.png" gap:platform="android" gap:density="hdpi" />
+  <gap:splash src="style/images/splash/drawable-hdpi/splash.9.png" gap:platform="android" gap:density="hdpi" />
+  <gap:splash src="style/images/splash/drawable-mdpi/splash.9.png" gap:platform="android" gap:density="mdpi" />
+  <gap:splash src="tyle/images/splash/drawable-xhdpi/splash.9.png" gap:platform="android" gap:density="xhdpi" />
+   <gap:splash src="tyle/images/splash/drawable-xxhdpi/splash.9.png" gap:platform="android" gap:density="xxhdpi" />
 
   <icon src="icon.png" width="64" height="64" gap:role="default" />
   <icon src="style/images/icon/android/drawable-hdpi/ic_launcher.png" width="72" height="72" gap:platform="android" gap:density="hdpi" />

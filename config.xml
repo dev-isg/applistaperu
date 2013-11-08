@@ -16,12 +16,6 @@
 
   <gap:platform name="android" />
 
-   <feature name="http://api.phonegap.com/1.0/battery"/>
-   <feature name="http://api.phonegap.com/1.0/network"/>
-   <feature name="http://api.phonegap.com/1.0/file"/>
-   <feature name="http://api.phonegap.com/1.0/notification"/>
-
-
   <preference name="permissions"      value="none"/>
   <preference name="phonegap-version" value="2.9.0" />
   <preference name="orientation"      value="portrait" />
@@ -29,6 +23,10 @@
   <preference name="fullscreen"       value="false" />
 
   <gap:splash src="splash.png" />
+  <gap:splash src="style/images/splash-ldpi.png" gap:platform="android" gap:density="ldpi" />
+  <gap:splash src="splash.png" gap:platform="android" gap:density="mdpi" />
+  <gap:splash src="style/images/splash-hdpi.png" gap:platform="android" gap:density="hdpi" />
+
   <icon src="icon.png" width="64" height="64" gap:role="default" />
   <icon src="style/images/icon/android/drawable-hdpi/ic_launcher.png" width="72" height="72" gap:platform="android" gap:density="hdpi" />
   <icon src="style/images/icon/android/drawable-xhdpi/ic_launcher.png" width="96" height="96" gap:platform="android" gap:density="xhdpi" />

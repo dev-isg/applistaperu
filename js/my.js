@@ -137,7 +137,7 @@ function onGetInstitu(response) {
  * @returns
  */
 function getDistritos(){
-	var distritoURL= 'http://192.168.1.50:8082/servicio_json/distrito';
+
 	/*
 	$.getJSON(distritoURL,function(data){ 
         $.each(data,function(index,item){
@@ -148,7 +148,7 @@ function getDistritos(){
         });
 	});*/
 	$.ajax({
-		url:distritoURL,
+		url:gatewayURL+'/servicio_json/distrito',
 		dataType: 'jsonp',
         jsonp: 'callback',
         jsonpCallback: 'jsonpCallback',

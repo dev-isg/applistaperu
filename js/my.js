@@ -75,6 +75,7 @@ function onGetAgentes(response) {
 	agentes = response;
 	$('#errorMessageSearch p').remove();
 	if (agentes.code == 1) {
+
 		var newAgentes = '<li id="item-id" data-theme="">Lista de agentes</li>';
 		$.each(agentes.result, function(index, item) {
 			newAgentes += '<li id="item-id" data-theme="">' + '<h3>' + item.va_nombre
@@ -85,9 +86,6 @@ function onGetAgentes(response) {
 	} else {
 		$('#agentesearch li[role!=heading]').remove();
 		$('#errorMessageSearch').append('<p>No se encontraron resultados</p>');
-//		$('#agentesearch').append(
-//				'<li data-theme=""><p>No se encontraron resultados</p></li>')
-//				.listview('refresh');
 	}
 }
 /**
@@ -181,6 +179,7 @@ function getDistritos(){
 function getBusqueda(){
 	var idbanco;
 	$('.listasearch').click(function(){
+		$('#errorMessageSearch p').remove();
 		$('#agentesearch li[role!=heading]').remove();
 		idbanco=$(this).attr('id');
 		var namebanco=$(this).find('a').text();

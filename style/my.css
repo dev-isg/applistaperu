@@ -15,6 +15,13 @@
 	border-right-width: 0px;
 }
 
+#errorMessageSearch p{
+	background: white;  
+	border-radius: 10px;  
+    padding: 10px;  color: #333;  
+    text-shadow: 0 0 0;
+}
+
 .ui-gridkev-a .ui-blockkev-a{
 	clear:left;
 }
